@@ -57,8 +57,9 @@ class GetPoints(ReceiptsServiceHelper):
         @return: Dictionary API response
         """
         data = Receipt.objects.filter(id=params["id"]).values("points")
+        print(len(data))
         if len(data) == 0:
             self.set_status_code(status_code=status.HTTP_400_BAD_REQUEST)
             self.error_message = GenericConstants.INVALID_ID.format(params["id"])
-
+            return {"message": self.error_message}
         return {"points": data[0].get("points")}

@@ -8,7 +8,7 @@ class GenericConstants:
     INVALID_TIME = "Time format is incorrect. Please use HH:MM format."
     INVALID_VALUE = "{} value is incorrect."
     INVALID_URL = "{} in url is invalid"
-    INVALID_ID = "No points found for {}"
+    INVALID_ID = "No points found for id {}"
     INVALID_RECEIPT_REQUEST = {
         "message": "Receipt is already used."
     }
