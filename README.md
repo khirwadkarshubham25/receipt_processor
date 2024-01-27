@@ -33,3 +33,18 @@ docker build --no-cache -t <image name> .
 docker-compose up
 ```
 ---------------------------------------------------------
+
+## Endpoints
+
+1. To process Receipts. Please use below endpoint.
+
+```
+http://127.0.0.1:8000/receipts/process
+```
+
+2. To get receipts points.
+
+```
+http://127.0.0.1:8000/receipts/2/points
+```
+Note: Please use port 8000.
